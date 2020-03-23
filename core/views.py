@@ -11,7 +11,7 @@ html_base = """
 
 # Create your views here.
 def home(request):
-    return HttpResponse(html_base +"<h1>esta es el home</h1><h2>esta es el home</h2>")
+    return render(request, "core/home.html")
 
 def about(request):
     return HttpResponse(html_base +"<h1>Aceerca de</h1>")
