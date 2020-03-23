@@ -14,10 +14,10 @@ def home(request):
     return render(request, "core/home.html")
 
 def about(request):
-    return HttpResponse(html_base +"<h1>Aceerca de</h1>")
+    return render(request, "core/about.html")
 
 def portafolio(request):
-    return HttpResponse(html_base +"<h1>esta es el portafolio</h1>")
+    return render(request, "core/portafolio.html")
 
 def contact(request):
-    return HttpResponse(html_base +"<h1>esta es el contacto</h1>")
+    return render(request, "core/contact.html")
