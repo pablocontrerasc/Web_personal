@@ -1,6 +1,17 @@
 {% extends 'core/base.html' %}
 
-{% block content%}
-    <h1>esta es el home</h1><h2>esta es el home</h2>
 
+{% block background_image %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+ {% block header%} 
+  <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Juan Pérez</h1>
+              <span class="subheading">Ingeniero Industrial</span>
+            </div>
+          </div>
+  </div>
 {% endblock %}
+
+  {% block content %} {% endblock %}
